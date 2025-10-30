@@ -92,10 +92,10 @@ This project helped me strengthen:
 Devansh Kulshreshtha
 📍 Full Stack Developer
 
-🌐 Portfolio
+🌐 Portfolio => https://personal-portfolio-rho-puce-91.vercel.app/
 
 💼 LinkedIn => www.linkedin.com/in/devansh1308
 
-📧 devkulsh1308@gmail.com
+📧 Email => devkulsh1308@gmail.com
 
 --------
