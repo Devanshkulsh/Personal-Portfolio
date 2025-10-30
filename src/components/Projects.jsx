@@ -74,7 +74,7 @@ const Projects = () => {
         {/* LEFT SIDE — Background Image */}
         <div className="relative md:w-1/2 w-full h-80 md:h-auto overflow-hidden rounded-2xl md:rounded-none">
           <motion.img
-            src="/assets/projects/im.png"
+            src="/assets/projects/ironman.png"
             alt="Developer Iron Man"
             className="w-full h-full object-cover object-center opacity-90"
             initial={{ scale: 1.1 }}
