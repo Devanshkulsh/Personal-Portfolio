@@ -1,16 +1,101 @@
-# React + Vite
+# 💻 Devansh Kulshreshtha — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive **personal portfolio website** built with **React**, **Tailwind CSS**, and **Framer Motion**, designed to showcase my projects, skills, and contact information in a sleek, cyber-inspired aesthetic.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+✨ **Hero Section** — Visually striking hero banner with futuristic animations and smooth scrolling.  
+💼 **Projects Section** — Interactive tabs with Framer Motion animations to explore my work.  
+🧠 **Skills Section** — Clean layout displaying my tech stack and areas of expertise.  
+📩 **Contact Section** — Engaging design encouraging visitors to connect or collaborate.  
+🧭 **Dynamic Navbar** — Smart navbar that adapts on scroll and includes a mobile slide-in menu.  
+📱 **Fully Responsive** — Designed for all screen sizes and devices.  
+⚡ **Framer Motion Integration** — Seamless, performant UI animations throughout the site.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Technologies |
+|-----------|---------------|
+| **Frontend** | React.js |
+| **Styling** | Tailwind CSS |
+| **Animations** | Framer Motion |
+| **Icons** | Lucide React |
+| **Deployment** | Vercel / Netlify (recommended) |
+
+---
+
+## 📸 Preview
+
+![Portfolio Preview](https://your-image-or-gif-link-here)
+
+*(Add a screenshot or short GIF of your portfolio here for best presentation.)*
+
+---
+
+## 🧩 Project Structure
+
+public/images
+
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Hero.jsx
+│ ├── Projects.jsx
+│ ├── Skills.jsx
+│ └── Contact.jsx
+├── App.jsx
+└── main.jsx
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone this repository and run it locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/portfolio.git
+
+# Navigate into the project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+```
+
+🧠 Learning Highlights
+
+This project helped me strengthen:
+
+⚛️ React — Component structuring, props management, and smooth state handling
+
+🎨 Tailwind CSS — Responsive design patterns and modern utility-first styling
+
+🌀 Framer Motion — Realistic, performance-friendly animations
+
+♿ Accessibility & UX — Optimized layouts for mobile and accessibility
+
+🔄 Scroll & Animation Sync — Smooth transitions between sections
+
+---
+
+🧑‍💻 Author
+
+Devansh Kulshreshtha
+📍 Full Stack Developer
+
+🌐 Portfolio => https://personal-portfolio-rho-puce-91.vercel.app/
+
+💼 LinkedIn => www.linkedin.com/in/devansh1308
+
+📧 Email => devkulsh1308@gmail.com
+
+--------
