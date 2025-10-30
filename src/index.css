@@ -9,3 +9,10 @@
 body {
   overflow-x: hidden;
 }
+
+/* Prevents text selection, image drag, and long press copy on mobile */
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
