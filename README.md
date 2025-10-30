@@ -94,8 +94,8 @@ Devansh Kulshreshtha
 
 🌐 Portfolio
 
-💼 LinkedIn
+💼 LinkedIn => www.linkedin.com/in/devansh1308
 
-📧 devansh@example.com
+📧 devkulsh1308@gmail.com
 
 --------
