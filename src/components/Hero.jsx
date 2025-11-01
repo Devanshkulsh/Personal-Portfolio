@@ -52,7 +52,15 @@ const Hero = () => {
           </p>
 
           {/* Button */}
-          <button className="bg-[#00FF88] hover:bg-[#00CC6A] text-black font-semibold px-6 py-3 rounded-lg w-fit shadow-[0_0_20px_rgba(0,255,136,0.4)] transition mx-auto md:mx-0">
+          <button
+            onClick={() => {
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="bg-[#00FF88] hover:bg-[#00CC6A] text-black font-semibold px-6 py-3 rounded-lg w-fit shadow-[0_0_20px_rgba(0,255,136,0.4)] transition mx-auto md:mx-0"
+          >
             Let's Connect
           </button>
         </div>

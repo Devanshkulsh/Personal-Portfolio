@@ -239,6 +239,12 @@ const About = () => {
                 boxShadow: "0 0 40px rgba(0,255,136,0.5)",
               }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                const contactSection = document.getElementById("contact");
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               className="relative overflow-hidden bg-[#00FF88] text-black font-bold px-10 py-4 rounded-2xl w-fit mx-auto md:mx-0 group"
             >
               <span className="relative z-10 flex items-center gap-2">
