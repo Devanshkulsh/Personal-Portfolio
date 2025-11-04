@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Code, ExternalLink } from "lucide-react";
 
 const Projects = () => {
-  const tabs = ["Web Apps", "UI/UX Designs", "3D Work"];
+  const tabs = ["Web Apps", "UI/UX Designs", "WordPress"];
   const [activeTab, setActiveTab] = useState("Web Apps");
 
   const projects = {
@@ -12,41 +12,112 @@ const Projects = () => {
         title: "Portfolio Website",
         desc: "A futuristic personal portfolio built with React, Framer Motion, and TailwindCSS.",
         stack: ["React", "TailwindCSS", "Framer Motion"],
-        link: "#",
+        link: "https://personal-portfolio-rho-puce-91.vercel.app/",
       },
       {
-        title: "SaaS Dashboard",
-        desc: "A powerful analytics dashboard with user auth, charts, and real-time updates.",
-        stack: ["Next.js", "Node.js", "MongoDB"],
-        link: "#",
+        title: "SHRI DHANWANTRI Medical COllege",
+        desc: "A modern medical college website",
+        stack: ["React.js", "JavaScript", "Tailwind CSS"],
+        link: "https://harmonious-lollipop-d58f28.netlify.app/",
+      },
+      {
+        title: "Dr. Pradeep Gupta Website",
+        desc: "A modern & animated website",
+        stack: ["React.js", "JavaScript", "Tailwind CSS", "Motion"],
+        link: "https://sweet-biscotti-7580ad.netlify.app/",
+      },
+      {
+        title: "clixo.ai Website 1",
+        desc: "A modern & animated website",
+        stack: ["React.js", "JavaScript", "Tailwind CSS", "Motion"],
+        link: "https://capable-bienenstitch-02aced.netlify.app/",
+      },
+      {
+        title: "clixo.ai Website 2",
+        desc: "A modern & animated website",
+        stack: ["React.js", "JavaScript", "Tailwind CSS", "Motion"],
+        link: "https://ubiquitous-pothos-6abb8d.netlify.app/",
+      },
+      {
+        title: "A medical college website template",
+        desc: "A modern & animated medical college website template",
+        stack: ["React.js", "JavaScript", "Tailwind CSS", "Motion"],
+        link: "https://willowy-gelato-d47622.netlify.app/",
+      },
+      {
+        title: "E-Kart",
+        desc: "E-Kart is a frontend eCommerce website built using HTML, CSS, and JavaScript",
+        stack: ["HTML", "CSS", "JavaScript",],
+        link: "https://e-cart-five-puce.vercel.app/",
+      },
+      {
+        title: "Hotel Hive",
+        desc: "Hotel Hive is a hotel room booking website built using HTML, CSS, and JavaScript",
+        stack: ["HTML", "CSS", "JavaScript",]
       },
     ],
     "UI/UX Designs": [
       {
-        title: "Crypto App UI",
-        desc: "High-fidelity Figma prototype for a crypto trading platform with neon linears.",
-        stack: ["Figma", "Framer"],
-        link: "#",
+        title: "Landing Page Concepts",
+        desc: "Conversion-focused landing pages for startups and digital products.",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/11-11-manifestation-workshop-4mlrbo",
       },
       {
         title: "Landing Page Concepts",
         desc: "Conversion-focused landing pages for startups and digital products.",
-        stack: ["Figma", "Illustrator"],
-        link: "#",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/prosperity-workshop-diwali-2025",
+      },
+      {
+        title: "Landing Page Concepts",
+        desc: "Conversion-focused landing pages for startups and digital products.",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/online-ahuti-program",
+      },
+      {
+        title: "Landing Page Concepts",
+        desc: "Conversion-focused landing pages for startups and digital products.",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/ancestral-breakthrough-program",
+      },
+      {
+        title: "Landing Page Concepts",
+        desc: "Conversion-focused landing pages for startups and digital products.",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/ancestral-healing",
+      },
+      {
+        title: "Landing Page Concepts",
+        desc: "Conversion-focused landing pages for startups and digital products.",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/manifestation-superpower",
+      },
+      {
+        title: "Landing Page Concepts",
+        desc: "Conversion-focused landing pages for startups and digital products.",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/lion-s-gate-workshop-lenjtd",
+      },
+      {
+        title: "Landing Page Concepts",
+        desc: "Conversion-focused landing pages for startups and digital products.",
+        stack: ["Knorish", "Tilda", "WordPress"],
+        link: "https://www.abundantlivesacademy.com/page/abundant-lives-academy-spell-reversal-workshop-m9sqbx",
       },
     ],
-    "3D Work": [
+    WordPress: [
       {
-        title: "Iron Dev Animation",
-        desc: "3D animation inspired by Iron Man coding futuristic interfaces.",
-        stack: ["Blender", "After Effects"],
-        link: "#",
+        title: "Bharat Ayurved Medical College website",
+        desc: "A normal wordpress website with minimum designs and modernisation",
+        stack: ["WordPress"],
+        link: "https://bamchrc.co.in/",
       },
       {
-        title: "Cyber Room Environment",
-        desc: "3D render of a neon-lit workstation setup in cyberpunk style.",
-        stack: ["Blender", "Unreal Engine"],
-        link: "#",
+        title: "Landing Page",
+        desc: "A landing page built on WordPress",
+        stack: ["WordPress"],
+        link: "https://spotlightwithnikhil.in/landing-page/",
       },
     ],
   };

@@ -148,7 +148,7 @@ const Intro = ({ onFinish }) => {
           </div>
 
           {/* CONTENT */}
-          <div className="relative z-10 text-center px-6">
+          <div className="relative z-10 flex flex-col items-center justify-center px-6 pb-10 md:pb-16 text-center min-h-[80vh] md:min-h-[85vh] overflow-visible">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
