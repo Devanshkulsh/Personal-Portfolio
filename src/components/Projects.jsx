@@ -1,55 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Code, ExternalLink } from "lucide-react";
+import { projectsData } from "../data/projects";
 
 const Projects = () => {
-  const tabs = ["Web Apps", "UI/UX Designs", "3D Work"];
-  const [activeTab, setActiveTab] = useState("Web Apps");
-
-  const projects = {
-    "Web Apps": [
-      {
-        title: "Portfolio Website",
-        desc: "A futuristic personal portfolio built with React, Framer Motion, and TailwindCSS.",
-        stack: ["React", "TailwindCSS", "Framer Motion"],
-        link: "#",
-      },
-      {
-        title: "SaaS Dashboard",
-        desc: "A powerful analytics dashboard with user auth, charts, and real-time updates.",
-        stack: ["Next.js", "Node.js", "MongoDB"],
-        link: "#",
-      },
-    ],
-    "UI/UX Designs": [
-      {
-        title: "Crypto App UI",
-        desc: "High-fidelity Figma prototype for a crypto trading platform with neon linears.",
-        stack: ["Figma", "Framer"],
-        link: "#",
-      },
-      {
-        title: "Landing Page Concepts",
-        desc: "Conversion-focused landing pages for startups and digital products.",
-        stack: ["Figma", "Illustrator"],
-        link: "#",
-      },
-    ],
-    "3D Work": [
-      {
-        title: "Iron Dev Animation",
-        desc: "3D animation inspired by Iron Man coding futuristic interfaces.",
-        stack: ["Blender", "After Effects"],
-        link: "#",
-      },
-      {
-        title: "Cyber Room Environment",
-        desc: "3D render of a neon-lit workstation setup in cyberpunk style.",
-        stack: ["Blender", "Unreal Engine"],
-        link: "#",
-      },
-    ],
-  };
+  const tabs = Object.keys(projectsData);
+  const [activeTab, setActiveTab] = useState(tabs[0]);
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -71,7 +27,7 @@ const Projects = () => {
       className="relative w-full bg-[#020202] text-white py-20 md:py-28 px-6 md:px-16 font-[Inter] overflow-hidden"
     >
       <div className="flex flex-col md:flex-row items-center md:items-stretch w-full gap-12 md:gap-0">
-        {/* LEFT SIDE — Background Image */}
+        {/* LEFT SIDE — Image */}
         <div className="relative md:w-1/2 w-full h-80 md:h-auto overflow-hidden rounded-2xl md:rounded-none">
           <motion.img
             src="/assets/projects/ironman.png"
@@ -81,7 +37,6 @@ const Projects = () => {
             whileInView={{ scale: 1 }}
             transition={{ duration: 2, ease: "easeOut" }}
           />
-          {/* <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent" /> */}
         </div>
 
         {/* RIGHT SIDE — Content */}
@@ -133,7 +88,7 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Project Cards */}
+          {/* Projects Grid */}
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -143,7 +98,7 @@ const Projects = () => {
               exit={{ opacity: 0, y: 50, transition: { duration: 0.4 } }}
               className="grid sm:grid-cols-2 gap-6"
             >
-              {projects[activeTab].map((project, index) => (
+              {projectsData[activeTab].map((project, index) => (
                 <motion.div
                   key={index}
                   variants={cardVariants}
@@ -163,14 +118,16 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-[#00FF88] hover:underline"
-                  >
-                    View Project <ExternalLink size={14} />
-                  </a>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-[#00FF88] hover:underline"
+                    >
+                      View Project <ExternalLink size={14} />
+                    </a>
+                  )}
                 </motion.div>
               ))}
             </motion.div>
@@ -178,7 +135,7 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* FLOATING GLOW */}
+      {/* Glow Effect */}
       <motion.div
         className="absolute -bottom-10 -left-10 w-80 h-80 bg-[#00FF88] rounded-full blur-[120px] opacity-10"
         animate={{

@@ -148,7 +148,7 @@ const Intro = ({ onFinish }) => {
           </div>
 
           {/* CONTENT */}
-          <div className="relative z-10 text-center px-6">
+          <div className="relative z-10 text-center px-6 pb-28 md:pb-40 min-h-[90vh] flex flex-col justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -161,7 +161,7 @@ const Intro = ({ onFinish }) => {
                 }}
               >
                 <motion.h1
-                  className="text-6xl md:text-8xl font-bold bg-linear-to-r from-[#00FF88] via-[#00CC6A] to-[#00FF88] bg-clip-text text-transparent mb-6"
+                  className="text-6xl md:text-8xl font-bold bg-linear-to-r from-[#00FF88] via-[#00CC6A] to-[#00FF88] bg-clip-text text-transparent mb-6 leading-[1.15] md:leading-normal"
                   animate={{
                     backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                   }}
