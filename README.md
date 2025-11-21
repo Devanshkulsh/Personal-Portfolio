@@ -18,12 +18,12 @@ A modern, fully responsive **personal portfolio website** built with **React**, 
 
 ## 🛠️ Tech Stack
 
-| Category | Technologies |
-|-----------|---------------|
-| **Frontend** | React.js |
-| **Styling** | Tailwind CSS |
-| **Animations** | Framer Motion |
-| **Icons** | Lucide React |
+| Category       | Technologies                   |
+| -------------- | ------------------------------ |
+| **Frontend**   | React.js                       |
+| **Styling**    | Tailwind CSS                   |
+| **Animations** | Framer Motion                  |
+| **Icons**      | Lucide React                   |
 | **Deployment** | Vercel / Netlify (recommended) |
 
 ---
@@ -32,7 +32,7 @@ A modern, fully responsive **personal portfolio website** built with **React**, 
 
 ![Portfolio Preview](https://your-image-or-gif-link-here)
 
-*(Add a screenshot or short GIF of your portfolio here for best presentation.)*
+_(Add a screenshot or short GIF of your portfolio here for best presentation.)_
 
 ---
 
@@ -98,4 +98,4 @@ Devansh Kulshreshtha
 
 📧 Email => devkulsh1308@gmail.com
 
---------
+---
