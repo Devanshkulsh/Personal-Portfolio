@@ -1,4 +1,5 @@
 // Contact.jsx
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import {
   Mail,
@@ -20,15 +21,26 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form submitted!");
-      form.current.reset();
-      setIsSubmitting(false);
-      alert(
-        "Your message has been sent! 🚀\n(Note: This is a demo — no actual email integration)"
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+
+      .then(
+        () => {
+          alert("Message sent successfully! 🚀");
+          form.current.reset();
+          setIsSubmitting(false);
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          alert("Failed to send message ❌");
+          setIsSubmitting(false);
+        }
       );
-    }, 2000);
   };
 
   const socialLinks = [
