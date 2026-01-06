@@ -12,6 +12,7 @@ import {
   Send,
 } from "lucide-react";
 import { useRef, useState } from "react";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
@@ -20,6 +21,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    const toastId = toast.loading("Sending message...", {
+      style: {
+        background: "#020202",
+        color: "#00FF88",
+        border: "1px solid #00FF88",
+      },
+    });
 
     emailjs
       .sendForm(
@@ -31,13 +40,31 @@ const Contact = () => {
 
       .then(
         () => {
-          alert("Message sent successfully! 🚀");
+          toast.success("Message sent successfully 🚀", {
+            id: toastId,
+            style: {
+              background: "#020202",
+              color: "#00FF88",
+              border: "1px solid #00FF88",
+            },
+            iconTheme: {
+              primary: "#00FF88",
+              secondary: "#020202",
+            },
+          });
           form.current.reset();
           setIsSubmitting(false);
         },
         (error) => {
           console.error("EmailJS Error:", error);
-          alert("Failed to send message ❌");
+          toast.error("Failed to send message ❌", {
+            id: toastId,
+            style: {
+              background: "#020202",
+              color: "#ff4d4f",
+              border: "1px solid #ff4d4f",
+            },
+          });
           setIsSubmitting(false);
         }
       );
