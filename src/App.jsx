@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Intro from "./components/Intro";
+import Experience from "./components/Experience";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -31,6 +32,7 @@ function App() {
           <SplashCursor />
           <Hero />
           <About />
+          <Experience />
           <Projects />
           <Skills />
           <Contact />
