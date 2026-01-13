@@ -6,8 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
-import Intro from "./components/Intro";
-import Experience from "./components/Experience";
+import IntroAnimation from "./components/IntroAnimation";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -26,13 +25,12 @@ function App() {
 
   return (
     <>
-      {showIntro && <Intro onFinish={() => setShowIntro(false)} />}
+      {showIntro && <IntroAnimation onFinish={() => setShowIntro(false)} />}
       {!showIntro && (
         <>
           <SplashCursor />
           <Hero />
           <About />
-          <Experience />
           <Projects />
           <Skills />
           <Contact />
